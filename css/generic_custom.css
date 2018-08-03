@@ -1,0 +1,15 @@
+#gtco-header {
+  height: 100vh;
+}
+#gtco-features {
+  margin-top: 70px;
+}
+ion-icon {
+  height: 80px;
+  width: 50px;
+  color: #52d3aa;
+}
+#gtco-features .feature-center .icon {
+  background-image: url('../images/profile.jpg');
+  background-size: cover;
+}
