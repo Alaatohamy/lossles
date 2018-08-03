@@ -332,7 +332,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 .gtco-cover .display-t,
 .gtco-cover .display-tc {
-  height: 900px;
+  height: 100vh;
   display: table;
   width: 100%;
 }

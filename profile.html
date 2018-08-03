@@ -47,63 +47,93 @@
     <![endif]-->
     </head>
     <body>
-        
+
     <div class="gtco-loader"></div>
-    
-    <div id="page">
-    <nav class="gtco-nav" role="navigation">
+
+    <div id="profile">
+      <nav class="gtco-nav" role="navigation">
         <div class="gtco-container">
-            <div class="row">
-                <div class="col-xs-2">
-                    <div id="gtco-logo"><a href="index.html">Oxygen.</a></div>
-                </div>
-                <div class="col-xs-8 text-center menu-1">
-                    <ul>
-                        <li class="active"><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li class="has-dropdown">
-                            <a href="services.html">Services</a>
-                            <ul class="dropdown">
-                                <li><a href="#">Web Design</a></li>
-                                <li><a href="#">eCommerce</a></li>
-                                <li><a href="#">Branding</a></li>
-                                <li><a href="#">API</a></li>
-                            </ul>
-                        </li>
-                        <li class="has-dropdown">
-                            <a href="#">Tools</a>
-                            <ul class="dropdown">
-                                <li><a href="#">HTML5</a></li>
-                                <li><a href="#">CSS3</a></li>
-                                <li><a href="#">Sass</a></li>
-                                <li><a href="#">jQuery</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
+          <div class="row">
+            <div class="col-xs-2">
+              <div id="gtco-logo"><a href="index.html">Lossless.</a></div>
             </div>
-            
-        </div>
-    </nav>
-    
-    <div id="gtco-features">
-        <div class="gtco-container">
-            <div class="row">
-                <div class="col-md-12 col-sm-12">
-                    <div class="feature-center animate-box" data-animate-effect="fadeIn">
-                        <span class="icon">
-                        </span>
-                        <h3>Profile</h3>
-                        <p>Name: Alaa Tohamy</p>
-                        <p>My Hotel: Spectrume</p>
-                        <p>My Group: Egypt-Spectrume</p>
-                        <p>Favourite Resturant: Smashburger</p>
-                    </div>
-                </div>
+            <div class="col-xs-8 text-center menu-1">
+              <ul>
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li class="has-dropdown">
+                  <a href="lost.html">Lost Items</a>
+                  <ul class="dropdown">
+                    <li><a href="#">Lost my item</a></li>
+                    <li><a href="#">List found Items</a></li>
+                  </ul>
+                </li>
+              </ul>
             </div>
+          </div>
         </div>
-    </div>
+      </nav>
+      <div id="gtco-features">
+          <div class="gtco-container">
+              <div class="row">
+                  <div class="col-md-12 col-sm-12">
+                      <div class="feature-center animate-box" data-animate-effect="fadeIn">
+                          <span class="profile-background">
+                          </span>
+                          <h3>Profile</h3>
+                          <p>Name: Alaa Tohamy</p>
+                          <p>My Hotel: Spectrume</p>
+                          <p>My Group: Egypt-Spectrume</p>
+                          <p>Favourite Resturant: Smashburger</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <button id="myBtn">Open Modal</button>
+
+      <!-- The Modal -->
+      <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p>Is This Your Hotel?</p>
+          <button class="close">Yes</button>
+          <button class="close">No</button>
+        </div>
+      </div>
+
+      <script>
+          // Get the modal
+          var modal = document.getElementById('myModal');
+          
+          // Get the button that opens the modal
+          var btn = document.getElementById("myBtn");
+          
+          // Get the <span> element that closes the modal
+          var span = document.getElementsByClassName("close")[0];
+          
+          // When the user clicks the button, open the modal 
+          btn.onclick = function() {
+              modal.style.display = "block";
+          }
+          
+          // When the user clicks on <span> (x), close the modal
+          span.onclick = function() {
+              modal.style.display = "none";
+          }
+          
+          // When the user clicks anywhere outside of the modal, close it
+          window.onclick = function(event) {
+              if (event.target == modal) {
+                  modal.style.display = "none";
+              }
+          }
+          </script>
+
+          <!-- <script src="js/custom.js"></script> -->
+
     <!-- jQuery -->
     <script src="js/jquery.min.js"></script>
     <!-- jQuery Easing -->
