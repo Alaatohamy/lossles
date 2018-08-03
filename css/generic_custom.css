@@ -43,6 +43,7 @@ ion-icon {
   padding: 20px;
   border: 1px solid #888;
   width: 80%;
+  min-height: 150px;
 }
 /* The Close Button */
 .close {
@@ -56,4 +57,11 @@ ion-icon {
   color: #000;
   text-decoration: none;
   cursor: pointer;
+}
+#no {
+  background-color: red;
+  border-color: red;
+}
+.myBtn {
+  color: transparent;
 }
